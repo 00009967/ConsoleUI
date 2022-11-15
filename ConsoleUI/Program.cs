@@ -14,7 +14,9 @@ namespace ConsoleUI
                 Console.WriteLine("In order to proceed press Enter");
                 Console.ReadKey();
                 Console.WriteLine("Here is he list of Cars");
+                Console.WriteLine("==============================<><><><<><>=====================================");
 
+                var vehicles = Factory.VehicleRepository().GetAllVehicles();
 
 
                 Factory.VehicleService().HandleVehicleRequest();
